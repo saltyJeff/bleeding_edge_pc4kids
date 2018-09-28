@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        @@include('../shared/shared-head.html')
+        <link rel="stylesheet" href="css/software.css">
+    </head>
+    <body>
+        @@include('../shared/shared-body.html')
+        <section>
+            <h1>Software</h1>
+            <p>
+                Here you can find a selection of software that we bundle into our Linux distrobution. If you would
+                rather not install Linux you can use these links to go to each agency's website and download
+                the portions you want.
+            </p>
+        </section>
+        <section id="info">
+            <span id="searchBarSpan"><input data-aos="fade-right" id="searchBar" contenteditable placeholder="Search..."/></span>
+        </section>
+        <section id="libWrapper">
+
+        </section>
+        <script id="libraryData" type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Thing",
+                        "name": "Wikipedia 4 Kids",
+                        "image": "https://dev.pcs4kids.org/pics/wiki.jpg",
+                        "url": "http://eastafricaschoolserver.org/Wikipedia/wp/w/Wikipedia_For_Schools.htm"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "LoremIpsum 4 Kids",
+                        "image": "https://dev.pcs4kids.org/pics/wiki.jpg",
+                        "url": "http://eastafricaschoolserver.org/Wikipedia/wp/w/Wikipedia_For_Schools.htm"
+                    }
+                ]
+            }
+        </script>
+        <template id="libItemTemp">
+            <a id="link" class="libLink" target="_blank">
+                <h3 id="name" class="libName"></h3>
+                <img id="pic" class="libPic" />
+            </a>
+        </template>
+        <script src="./js/software.js"></script>
+        <script>
+            AOS.init()
+        </script>
+    </body>
+</html>

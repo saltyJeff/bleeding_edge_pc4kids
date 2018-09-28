@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./css/simple-grid.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="./css/shared-css.css">
+
+
+
+        <link rel="stylesheet" href="css/legal.css">
+    </head>
+    <body>
+        <nav id="topNav">
+        <span class="spacer"></span>
+        <span id="topNavLinks">
+            <a class="topLink" href="/">Home</a>
+            <a class="topLink" href="/download.html">Download</a>
+            <a class="topLink" href="/software.html">Software</a>
+            <a class="topLink" href="/members.html">Members</a>
+            <a class="topLink donate" href="/donate.html">Donate</a>
+            <a class="topLink" href="/legal.html">Legal</a>
+        </span>
+</nav>
+
+<a class="topLink" id="hamburger">&#x2630;</a>
+
+<nav id="sideNav">
+    <a class="sideLink" href="/">Home</a>
+    <a class="sideLink" href="/download.html">Download</a>
+    <a class="sideLink" href="/software.html">Software</a>
+    <a class="sideLink" href="/members.html">Members</a>
+    <a class="sideLink donate" href="/donate.html">Donate</a>
+    <a class="sideLink" href="/legal.html">Legal</a>
+</nav>
+<script>
+    $('#hamburger').click(function () {
+        $('#sideNav').slideToggle()
+    })
+</script>
+<!--SEO Tags-->
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "PCs4KIDs"
+    }
+</script>
+        <section>
+            <h1>Legal Info</h1>
+        </section>
+        <section id="info">
+            <h2 data-aos="fade-right">Info</h2>
+        </section>
+        <section id="policyPlan">
+            <h2 data-aos="fade-right">Policy Plan</h2>
+        </section>
+        <section id="boardMembers">
+            <h2 data-aos="fade-right">Board Members</h2>
+        </section>
+        <section id="compensation">
+            <h2 data-aos="fade-right">Compensation </h2>
+        </section>
+        <section id="financialReports">
+            <h2 data-aos="fade-right">Financial Reports</h2>
+        </section>
+        <section id="statutes">
+            <h2 data-aos="fade-right">Statutes</h2>
+        </section>
+        <script>
+            AOS.init()
+        </script>
+    </body>
+</html>

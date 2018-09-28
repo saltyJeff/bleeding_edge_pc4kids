@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./css/simple-grid.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="./css/shared-css.css">
+
+
+
+        <link rel="stylesheet" href="css/software.css">
+    </head>
+    <body>
+        <nav id="topNav">
+        <span class="spacer"></span>
+        <span id="topNavLinks">
+            <a class="topLink" href="/">Home</a>
+            <a class="topLink" href="/download.html">Download</a>
+            <a class="topLink" href="/software.html">Software</a>
+            <a class="topLink" href="/members.html">Members</a>
+            <a class="topLink donate" href="/donate.html">Donate</a>
+            <a class="topLink" href="/legal.html">Legal</a>
+        </span>
+</nav>
+
+<a class="topLink" id="hamburger">&#x2630;</a>
+
+<nav id="sideNav">
+    <a class="sideLink" href="/">Home</a>
+    <a class="sideLink" href="/download.html">Download</a>
+    <a class="sideLink" href="/software.html">Software</a>
+    <a class="sideLink" href="/members.html">Members</a>
+    <a class="sideLink donate" href="/donate.html">Donate</a>
+    <a class="sideLink" href="/legal.html">Legal</a>
+</nav>
+<script>
+    $('#hamburger').click(function () {
+        $('#sideNav').slideToggle()
+    })
+</script>
+<!--SEO Tags-->
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "PCs4KIDs"
+    }
+</script>
+        <section>
+            <h1>Software</h1>
+            <p>
+                Here you can find a selection of software that we bundle into our Linux distrobution. If you would
+                rather not install Linux you can use these links to go to each agency's website and download
+                the portions you want.
+            </p>
+        </section>
+        <section id="info">
+            <span id="searchBarSpan"><input data-aos="fade-right" id="searchBar" contenteditable placeholder="Search..."/></span>
+        </section>
+        <section id="libWrapper">
+
+        </section>
+        <script id="libraryData" type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Thing",
+                        "name": "Wikipedia 4 Kids",
+                        "image": "https://dev.pcs4kids.org/pics/wiki.jpg",
+                        "url": "http://eastafricaschoolserver.org/Wikipedia/wp/w/Wikipedia_For_Schools.htm"
+                    },
+                    {
+                        "@type": "Thing",
+                        "name": "LoremIpsum 4 Kids",
+                        "image": "https://dev.pcs4kids.org/pics/wiki.jpg",
+                        "url": "http://eastafricaschoolserver.org/Wikipedia/wp/w/Wikipedia_For_Schools.htm"
+                    }
+                ]
+            }
+        </script>
+        <template id="libItemTemp">
+            <a id="link" class="libLink" target="_blank">
+                <h3 id="name" class="libName"></h3>
+                <img id="pic" class="libPic" />
+            </a>
+        </template>
+        <script src="./js/software.js"></script>
+        <script>
+            AOS.init()
+        </script>
+    </body>
+</html>

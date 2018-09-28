@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Damion');
+.imgSlider {
+    background-image: url("../img/kids.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0px;
+    margin: 0px;
+}
+.info {
+    max-width: calc(80vh - 30px);
+    font-weight: bold;
+    border-radius: 20px;
+    width: 700px;
+    padding: 10px;
+    background-color: rgba(140,140,140, 0.5);
+    border: 1px solid black;
+}
+.brand, .tagline, .quote {
+    text-align: center;
+    color: white;
+}
+.brand {
+    font-size: 60pt;
+    font-family: 'Damion', cursive;
+}
+.quote {
+    font-size: 15pt;
+    font-weight: bold;
+}
+.tagline {
+    font-size: 20pt;
+    font-weight: bold;
+}
+.linkRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.linkRow > .topLink {
+    margin-top: 10px;
+}
+@media screen and (max-width: 959px) {
+    .brand {
+        font-size: 50pt;
+    }
+    .quote {
+        font-size: 12pt;
+    }
+    .tagline {
+        font-size: 18pt;
+    }
+}

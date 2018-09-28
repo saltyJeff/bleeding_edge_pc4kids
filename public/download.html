@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./css/simple-grid.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="./css/shared-css.css">
+
+
+
+        <link rel="stylesheet" href="css/download.css">
+    </head>
+    <body>
+        <nav id="topNav">
+        <span class="spacer"></span>
+        <span id="topNavLinks">
+            <a class="topLink" href="/">Home</a>
+            <a class="topLink" href="/download.html">Download</a>
+            <a class="topLink" href="/software.html">Software</a>
+            <a class="topLink" href="/members.html">Members</a>
+            <a class="topLink donate" href="/donate.html">Donate</a>
+            <a class="topLink" href="/legal.html">Legal</a>
+        </span>
+</nav>
+
+<a class="topLink" id="hamburger">&#x2630;</a>
+
+<nav id="sideNav">
+    <a class="sideLink" href="/">Home</a>
+    <a class="sideLink" href="/download.html">Download</a>
+    <a class="sideLink" href="/software.html">Software</a>
+    <a class="sideLink" href="/members.html">Members</a>
+    <a class="sideLink donate" href="/donate.html">Donate</a>
+    <a class="sideLink" href="/legal.html">Legal</a>
+</nav>
+<script>
+    $('#hamburger').click(function () {
+        $('#sideNav').slideToggle()
+    })
+</script>
+<!--SEO Tags-->
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "PCs4KIDs"
+    }
+</script>
+        <section>
+            <h1>Downloads</h1>
+            <section style="text-align: center">
+                <br>
+                <br>
+                <h3>
+                    Because our software is based on Linux, it can run on a variety of lower-end hardware. 
+                    Please help recycle an old PC to
+                    help further the education of the next generation!
+                </h3>
+                <img src="img/main_spread.jpg"/>
+                <h3>
+                    Files are provided as bootable ISO torrents. 
+                    If you would like to download the content only without the Linux system, please see the <a href="/software.html">software section</a>.
+                    Please see the <a href="#faq">help section</a> 
+                    if you need assistance with installation of the ISOs.</h3>
+            </section>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 style="font-style: italic">We provide "slimmed" ISO images that only contain content for smaller children to reduce disk size</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Ages 2-12+ (everything)</h2>
+                </div>
+                <div class="col-6">
+                    <a class="dlLink">Download Full (x GiB)</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Ages 2-10</h2>
+                </div>
+                <div class="col-6">
+                    <a class="dlLink">Download (x GiB)</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                        <h2>Ages 2-8</h2>
+                </div>
+                <div class="col-6">
+                    <a class="dlLink">Download (x GiB)</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Ages 2-6</h2>
+                </div>
+                <div class="col-6">
+                    <a class="dlLink">Download (x GiB)</a>
+                </div>
+            </div>
+        </section>
+        <section id="faq">
+            <h2>Help Section</h2>
+            <p>If you want to install linux, then just keep guessing and pressing buttons until it works or find a someone who uses Arch</p>
+        </section>
+    </body>
+</html>

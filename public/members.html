@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./css/simple-grid.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="./css/shared-css.css">
+
+
+
+        <link rel="stylesheet" href="css/members.css">
+    </head>
+    <body>
+        <nav id="topNav">
+        <span class="spacer"></span>
+        <span id="topNavLinks">
+            <a class="topLink" href="/">Home</a>
+            <a class="topLink" href="/download.html">Download</a>
+            <a class="topLink" href="/software.html">Software</a>
+            <a class="topLink" href="/members.html">Members</a>
+            <a class="topLink donate" href="/donate.html">Donate</a>
+            <a class="topLink" href="/legal.html">Legal</a>
+        </span>
+</nav>
+
+<a class="topLink" id="hamburger">&#x2630;</a>
+
+<nav id="sideNav">
+    <a class="sideLink" href="/">Home</a>
+    <a class="sideLink" href="/download.html">Download</a>
+    <a class="sideLink" href="/software.html">Software</a>
+    <a class="sideLink" href="/members.html">Members</a>
+    <a class="sideLink donate" href="/donate.html">Donate</a>
+    <a class="sideLink" href="/legal.html">Legal</a>
+</nav>
+<script>
+    $('#hamburger').click(function () {
+        $('#sideNav').slideToggle()
+    })
+</script>
+<!--SEO Tags-->
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "PCs4KIDs"
+    }
+</script>
+        <section>
+            <h1>Members</h1>
+            <p>
+                PCs4KIDs relies on the contributions of these super cool amazing people 😎.
+            </p>
+        </section>
+        <section id="peopleWrapper"></section>
+        <section id="peopleModalBkgd">
+            <section id="peopleModal">
+                <h1 id="modalName">My Name</h1>
+                <img id="modalPic" src="https://pcs4kids.org/wp-content/uploads/2018/08/Jeff2.jpg" />
+                <br>
+                <h2>Position</h2>
+                <p id="modalPosition"></p>
+                <h2>Experience</h2>
+                <p id="modalExperience"></p>
+                <h2>Reason for Joining</h2>
+                <p id="modalReason"></p>
+                <a class="topLink" id="closeModal">X</a>
+            </section>
+        </section>
+        <script id="peopleData" type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Person",
+                        "name": "Jefferson Lee",
+                        "image": "https://pcs4kids.org/wp-content/uploads/2018/08/Jeff2.jpg",
+                        "worksFor": {
+                            "@type": "Organization",
+                            "name": "PCs4KIDs"
+                        },
+                        "knowsAbout": "Typing really fast",
+                        "jobTitle": "a person",
+                        "reason": "Wanted to show off typing skills"
+                    }
+                ]
+            }
+        </script>
+        <template id="personTemp">
+            <div id="wrapper" class="personWrapper">
+                <h3 id="name" class="personName"></h3>
+                <img id="pic" class="personPic" />
+            </a>
+        </template>
+        <script src="./js/members.js"></script>
+        <script>
+            AOS.init()
+        </script>
+    </body>
+</html>

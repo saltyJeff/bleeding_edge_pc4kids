@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        @@include('../shared/shared-head.html')
+        <link rel="stylesheet" href="css/members.css">
+    </head>
+    <body>
+        @@include('../shared/shared-body.html')
+        <section>
+            <h1>Members</h1>
+            <p>
+                PCs4KIDs relies on the contributions of these super cool amazing people 😎.
+            </p>
+        </section>
+        <section id="peopleWrapper"></section>
+        <section id="peopleModalBkgd">
+            <section id="peopleModal">
+                <h1 id="modalName">My Name</h1>
+                <img id="modalPic" src="https://pcs4kids.org/wp-content/uploads/2018/08/Jeff2.jpg" />
+                <br>
+                <h2>Position</h2>
+                <p id="modalPosition"></p>
+                <h2>Experience</h2>
+                <p id="modalExperience"></p>
+                <h2>Reason for Joining</h2>
+                <p id="modalReason"></p>
+                <a class="topLink" id="closeModal">X</a>
+            </section>
+        </section>
+        <script id="peopleData" type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Person",
+                        "name": "Jefferson Lee",
+                        "image": "https://pcs4kids.org/wp-content/uploads/2018/08/Jeff2.jpg",
+                        "worksFor": {
+                            "@type": "Organization",
+                            "name": "PCs4KIDs"
+                        },
+                        "knowsAbout": "Typing really fast",
+                        "jobTitle": "a person",
+                        "reason": "Wanted to show off typing skills"
+                    }
+                ]
+            }
+        </script>
+        <template id="personTemp">
+            <div id="wrapper" class="personWrapper">
+                <h3 id="name" class="personName"></h3>
+                <img id="pic" class="personPic" />
+            </a>
+        </template>
+        <script src="./js/members.js"></script>
+        <script>
+            AOS.init()
+        </script>
+    </body>
+</html>

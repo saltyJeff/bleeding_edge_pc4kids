@@ -1,0 +1,94 @@
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: white;
+}
+#peopleWrapper {
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.personWrapper {
+    width: 100vw;
+    max-width: 200px;
+    height: 300px;
+    margin-right: 20px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+}
+.personWrapper:hover {
+    box-shadow: 5px 5px grey;
+}
+.personName {
+    height: 10%;
+    text-align: center;
+    text-decoration: none;
+}
+.personPic {
+    height: 80%;
+}
+#peopleModal {
+    $modalHeight: 600px;
+    $modalWidth: 800px;
+    height: $modalHeight;
+    width: $modalWidth;
+    background-color: white;
+    position: fixed;
+    padding: 20px;
+    top: calc((100vh - #{$modalHeight}) / 2);
+    left: calc((100vw - #{$modalWidth}) / 2);
+}
+#peopleModalBkgd {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(200, 200, 200, 0.6);
+    display: none;
+}
+#closeModal {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+#modalPic {
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 959px) {
+    #peopleModal {
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        text-align: center;
+    }
+    #peopleModal > h1 {
+        text-align: left;
+    }
+    #peopleModal > h2 {
+        text-align: left;
+    }
+    #peopleModal > p {
+        text-align: left;
+    }
+    #closeModal {
+        position: relative;
+    }
+    #modalPic {
+        float: none;
+        height: 200px;
+    }
+}
